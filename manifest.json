@@ -1,0 +1,14 @@
+{
+  "name": "Ruliweb mypi reply collector",
+  "description": "Ruliweb mypi reply collector",
+  "version": "0.1",
+  "permissions": ["contextMenus", "background", "tabs", "http://*/*", "https://*/*"],
+  "background": {
+    "scripts": ["sample.js"]
+  },
+  "content_scripts": [{
+    "js": ["jquery.js", "sample2.js"],
+    "matches": ["http://mypi.ruliweb.com/*"]
+  }],
+  "manifest_version": 2
+}
